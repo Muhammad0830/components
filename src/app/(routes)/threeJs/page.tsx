@@ -3,7 +3,7 @@
 import { Link } from "lucide-react";
 import NextLink from "next/link";
 
-export default function Home() {
+export default function Page() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
       <h1 className="text-3xl mb-4">Components</h1>
@@ -13,18 +13,18 @@ export default function Home() {
       <ul className="flex flex-col p-2 rounded-md border mt-4">
         <li>
           <NextLink
-            href={"/dragAndDropCards"}
+            href={"/threeJs/react_logo"}
             className="flex items-center gap-2 hover:bg-neutral-900 p-2 rounded-sm"
           >
             <Link className="w-5 h-5 text-black dark:text-white" />
-            <div>Drag and Drop Cards</div>
+            <div>React icon</div>
           </NextLink>
           <NextLink
-            href={"/threeJs"}
+            href={"/threeJs/simpleRectangle"}
             className="flex items-center gap-2 hover:bg-neutral-900 p-2 rounded-sm"
           >
             <Link className="w-5 h-5 text-black dark:text-white" />
-            <div>ThreeJs components</div>
+            <div>Simple Rectangle icon</div>
           </NextLink>
         </li>
       </ul>
