@@ -7,8 +7,8 @@ import * as THREE from "three";
 
 export default function ReactRectangle3D() {
   return (
-    <div className="w-full h-full min-h-screen flex items-center justify-center bg-black">
-      <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
+    <div className="w-full h-[100vh] flex items-center justify-center bg-black">
+      <Canvas camera={{ position: [0, 0, 5], fov: 50 }} className="h-full">
         <ambientLight intensity={0.6} />
         <directionalLight position={[3, 3, 3]} intensity={1.2} />
         <Rectangle />
